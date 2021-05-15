@@ -1,19 +1,23 @@
 // listas
-const cidades = new Array(`São Paulo`, `Rio De Janeiro`,`Salvador`,`Porto Alegre`,`Belo Horizonte`);
+const cidades = new Array(`São Paulo`, `Rio De Janeiro`, `Salvador`, `Porto Alegre`, `Belo Horizonte`);
 
 // console.log(cidades);
 
 cidades.push(`Curitiba`);
 
-cidades.splice(3,1);
+cidades.splice(3, 1);
 
 let idade = 19;
 
 if (idade >= 18) {
 
     console.log('Maior de idade');
-}else{
+} else {
     console.log("Menor de idade");
 }
 
-console.log(cidades);
+let i = 0;
+while(i < cidades.length){
+    console.log(cidades[i]);
+    i++;
+}
